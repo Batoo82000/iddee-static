@@ -1,4 +1,9 @@
 "use strict";
+
+/*----------------------------------------*/
+/* Gestion du menu burger en format mobile*/
+/*----------------------------------------*/
+
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".ul-navbar");
 const mobileLinks = document.querySelectorAll(".ul-navbar li a");
@@ -22,3 +27,32 @@ document.addEventListener("click", function (event) {
     menu.classList.remove("show");
   }
 });
+
+/*----------------------------------------*/
+/* Gestion du menu burger en format mobile*/
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/* Gestion des accordions*/
+/*----------------------------------------*/
+
+
+let acc = document.getElementsByClassName("accordion");
+console.log(acc);
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let accordionContent = this.nextElementSibling;
+    if (accordionContent.style.maxHeight) {
+      accordionContent.style.maxHeight = null;
+    } else {
+      accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+    }
+  });
+}
+
+/*----------------------------------------*/
+/* Gestion des accordions*/
+/*----------------------------------------*/

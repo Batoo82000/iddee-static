@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    background: #f7ffe5;
-    font-family: "Montserrat", sans-serif;
-    /* background-image: url(../img/green-tree.svg); */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f7ffe5;
+  font-family: "Montserrat", sans-serif;
+  /* background-image: url(../img/green-tree.svg); */
 }
 
-@media (max-width : 768px) {
-    body {
-        background-image: none;
-    }
+@media (max-width: 768px) {
+  body {
+    background-image: none;
+  }
 }
 /*------------------------------------------------------*/
 
@@ -21,115 +21,112 @@ body {
 /*------------------------------------------------------*/
 
 nav {
-    display: flex;
-    position: sticky;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    background: #f7ffe5;
-    z-index: 2;
-    box-shadow: 2px 2px 5px #a0c49d;
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  background: #f7ffe5;
+  z-index: 2;
+  box-shadow: 2px 2px 5px #a0c49d;
 }
 
 .lien-navbar {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .img-navbar {
-    height: 100%;
-    width: 120px;
+  height: 100%;
+  width: 120px;
 }
 
 .li-navbar {
-    list-style-type: none;
-    height: 100%;
-    width: 95%;
-    text-align: center;
+  list-style-type: none;
+  height: 100%;
+  width: 95%;
+  text-align: center;
 }
 
 .li-navbar a {
-    color: black;
-    display: flex;
-    height: 100%;
-    width: 95%;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    cursor: pointer;
-
+  color: black;
+  display: flex;
+  height: 100%;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .li-navbar a:hover {
-    color: #f7ffe5;
-    transition: 0.5s ease-in-out;
-    background: #a0c49d;
-    box-shadow: 3px 3px 5px#73A9AD;
-    border: solid 1px black ;
+  color: #f7ffe5;
+  transition: 0.5s ease-in-out;
+  background: #a0c49d;
+  box-shadow: 3px 3px 5px#73A9AD;
+  border: solid 1px black;
 }
 
 .ul-navbar {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    height: 120px;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 120px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .burger {
-    display: none;
-    cursor: pointer;
-    margin-right: 10px;
+  display: none;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .burger:hover .line {
-    transition: 0.1s ease-in-out;
-    background-color: #73a9ad;
-
+  transition: 0.1s ease-in-out;
+  background-color: #73a9ad;
 }
 
 .line {
-    width: 35px;
-    height: 4px;
-    background-color: #a0c49d;
-    margin: 4px;
+  width: 35px;
+  height: 4px;
+  background-color: #a0c49d;
+  margin: 4px;
 }
 
 @media (max-width: 768px) {
-    .burger {
-        display: block;
-    }
+  .burger {
+    display: block;
+  }
 
-    .ul-navbar {
-        display: none;
-        background-color: aquamarine;
-        width: 100%;
-        position: absolute;
-        top: 213px;
-        height: 100%;
-        z-index: 2;
-    }
+  .ul-navbar {
+    display: none;
+    background-color: aquamarine;
+    width: 100%;
+    position: absolute;
+    top: 213px;
+    height: 100%;
+    z-index: 2;
+  }
 
-    .show {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .li-navbar {
-        top: 120px;
-        width: 100%;
-        left: 0;
-        background-color: #a0c49d;
-    }
+  .li-navbar {
+    top: 120px;
+    width: 100%;
+    left: 0;
+    background-color: #a0c49d;
+  }
 
-    .li-navbar a {
-        width: 100%;
-        height: 60px;
-    }
+  .li-navbar a {
+    width: 100%;
+    height: 60px;
+  }
 }
 
 /*------------------------------------------------------*/
@@ -138,47 +135,51 @@ nav {
 
 /*------------------------------------------------------*/
 
-.accueil_container{
-    max-width: 1440px;
-    margin: auto;
+.accueil_container {
+  max-width: 1440px;
+  margin: auto;
 }
-.accueil_container, .accueil_description, .accueil_img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.accueil_container,
+.accueil_description,
+.accueil_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.accueil_img{
-    margin-top: 20px;
+.accueil_img {
+  margin-top: 20px;
 }
 .accueil_img > img {
-    width: 40%
+  width: 40%;
 }
-.accueil_titre{
-    text-align: center;
-    padding: 0 30px;
-    margin-right: 30px;
-    margin-left:30px;
-    margin-bottom: 20px;
+.accueil_titre {
+  text-align: center;
+  padding: 0 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
-.accueil_description{
-    margin: 0 30px;
+.accueil_description {
+  margin: 0 30px;
 }
-.accueil_description, .accueil_titre{
-    border: solid 1px #a0c49d;
-    border-radius: 15px;
-    box-shadow: 5px 5px 12px #73a9ad;
+.accueil_description,
+.accueil_titre {
+  border: solid 1px #a0c49d;
+  border-radius: 15px;
+  box-shadow: 5px 5px 12px #73a9ad;
 }
-.accueil_description > p{
-    padding: 0 20px;
-    font-size: 20px;
-    text-align: justify
+.accueil_description > p {
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: justify;
 }
 @media (max-width: 576px) {
-    .accueil_titre, .accueil_description {
-        width: 100%;
-        border-radius: 0;
-    }
+  .accueil_titre,
+  .accueil_description {
+    width: 100%;
+    border-radius: 0;
+  }
 }
 
 /*------------------------------------------------------*/
@@ -187,57 +188,87 @@ nav {
 
 /*------------------------------------------------------*/
 
-
-
 footer {
-    min-height: 50vh;
-    position: relative;
-    z-index: 0;
+  min-height: 50vh;
+  position: relative;
+  z-index: 0;
 }
 
 .ul-footer {
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    height: 120px;
-    width: 100%;
-    background-color: #a0c49d;
-    padding: 0;
-    margin: 0;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  height: 120px;
+  width: 100%;
+  background-color: #a0c49d;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .ul-footer a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    text-decoration: none;
-    font-size: 1.1rem;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  height: 100%;
+  width: 100%;
 }
 
 .li-footer {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .ul-footer a:hover {
-    background-color: #c4d7b2;
-    transition: 0.3s ease-in-out;
+  background-color: #c4d7b2;
+  transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 576px) {
-    .ul-footer {
-        flex-direction: column;
-        height: 200px;
-    }
+  .ul-footer {
+    flex-direction: column;
+    height: 200px;
+  }
 
-    .li-footer {
-        margin-top: 2px;
-    }
+  .li-footer {
+    margin-top: 2px;
+  }
+}
+
+/*------------------------------------------------------*/
+
+/*accordions*/
+
+/*------------------------------------------------------*/
+
+.accordion {
+  background-color: #C4D7B2;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #A0C49D;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.accordion_content {
+  padding: 0 18px;
+  background-color: #F7FFE5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
