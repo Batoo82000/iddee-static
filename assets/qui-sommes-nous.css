@@ -1,0 +1,8 @@
+@media (max-width:576px){
+    .iddees_description, .iddees_titre {
+    display:none;
+    }
+}
+.accordion {
+    margin-top: 10px;
+}
