@@ -1,0 +1,33 @@
+/* Styles de base pour les éléments d'accordéon */
+.accordion {
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .accordion_btn {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .accordion_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  /* Lorsque la classe "active" est ajoutée, l'accordéon s'ouvre avec une animation */
+  .accordion_content.active {
+    max-height: 10000px; /* Hauteur maximale souhaitée */
+  }
+@media (min-width: 577px) {
+    .accordion {
+        display:none;
+    }
+}

@@ -1,9 +1,8 @@
 "use strict";
 
-/*----------------------------------------*/
-/* Gestion du menu burger en format mobile*/
-/*----------------------------------------*/
-
+//------------------------------------//
+// gestion de la navbar en mode portable
+//------------------------------------//
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".ul-navbar");
 const mobileLinks = document.querySelectorAll(".ul-navbar li a");
@@ -27,32 +26,29 @@ document.addEventListener("click", function (event) {
     menu.classList.remove("show");
   }
 });
+//------------------------------------//
+// gestion de la navbar en mode portable
+//------------------------------------//
 
-/*----------------------------------------*/
-/* Gestion du menu burger en format mobile*/
-/*----------------------------------------*/
+//------------------------------------//
+// gestion des accordions
+//------------------------------------//
 
-/*----------------------------------------*/
-/* Gestion des accordions*/
-/*----------------------------------------*/
+document.addEventListener("DOMContentLoaded", function () {
+  // Sélectionnez tous les éléments d'accordéon
+  let accordions = document.querySelectorAll('.accordion');
 
+  // Ajoutez un gestionnaire d'événements à chaque élément d'accordéon
+  accordions.forEach(function (accordion) {
+    let accordionBtn = accordion.querySelector('.accordion_btn');
+    let accordionContent = accordion.querySelector('.accordion_content');
 
-let acc = document.getElementsByClassName("accordion");
-console.log(acc);
-let i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let accordionContent = this.nextElementSibling;
-    if (accordionContent.style.maxHeight) {
-      accordionContent.style.maxHeight = null;
-    } else {
-      accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
-    }
+    accordionBtn.addEventListener("click", function () {
+      if (accordionContent.classList.contains("active")) {
+        accordionContent.classList.remove("active");
+      } else {
+        accordionContent.classList.add("active");
+      }
+    });
   });
-}
-
-/*----------------------------------------*/
-/* Gestion des accordions*/
-/*----------------------------------------*/
+});
