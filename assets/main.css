@@ -139,7 +139,7 @@ nav {
 /*------------------------------------------------------*/
 
 .accueil_container {
-  max-width: 1440px;
+  max-width: 1400px;
   margin: auto;
 }
 .accueil_container,
@@ -242,36 +242,4 @@ footer {
   .li-footer {
     margin-top: 2px;
   }
-}
-
-/*------------------------------------------------------*/
-
-/*accordions*/
-
-/*------------------------------------------------------*/
-
-.accordion {
-  background-color: #C4D7B2;
-  cursor: pointer;
-  margin-top: 10px;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #A0C49D;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.accordion_content {
-  padding: 0 18px;
-  background-color: #F7FFE5;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
 }

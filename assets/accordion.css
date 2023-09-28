@@ -1,16 +1,17 @@
 /* Styles de base pour les éléments d'accordéon */
 .accordion {
     margin: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
+    background-color: #A0C49D;
   }
   
   .accordion_btn {
+    color: #F7FFE5;
     width: 100%;
     padding: 10px;
     text-align: left;
-    background-color: #f5f5f5;
+    background-color: #A0C49D;
     border: none;
     outline: none;
     cursor: pointer;

@@ -6,3 +6,8 @@
 .accordion {
     margin-top: 10px;
 }
+.iddees_container
+{
+    max-width: 1400px;
+    margin: auto;
+}
