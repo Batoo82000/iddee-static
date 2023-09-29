@@ -3,11 +3,43 @@
     display:none;
     }
 }
+
 .accordion {
     margin-top: 10px;
 }
+
 .iddees_container
 {
     max-width: 1400px;
     margin: auto;
+}
+
+.iddees_description_titre{
+    text-align: center;
+}
+
+.iddees_description_titre > h2, h2{
+    color: #f7ffe5;
+    background-color: #A0C49D;
+}
+h2{
+    padding: 10px 0;
+    text-align: center;
+}
+h3{
+    margin: 0;
+    text-align: center;
+}
+p{
+    margin: 0 20px
+}
+.accordion_content > p{
+    color: #f7ffe5;
+    margin: 10px 20px;
+}
+.card_position > h5{
+    font-size: 1.2em;
+}
+.card_position > h5, .card_nom > p {
+    color: #A0C49D;
 }
