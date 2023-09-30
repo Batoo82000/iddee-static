@@ -30,12 +30,23 @@ h3{
     margin: 0;
     text-align: center;
 }
+.iddees_titre{
+    margin: 10px auto;
+    padding: 10px 0;
+    max-width: 1000px;
+    color: #f7ffe5;
+    background-color: #A0C49D;
+    border-radius: 15px;
+}
 p{
     margin: 0 20px
 }
 .accordion_content > p{
     color: #f7ffe5;
     margin: 10px 20px;
+}
+h4{
+    text-align: center;
 }
 .card_position > h5{
     font-size: 1.2em;
