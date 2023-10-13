@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue à IDDEES</title>
     <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="./assets/contact.css">
 </head>
 
 <body>
@@ -42,24 +43,41 @@
             <div class="line"></div>
         </div>
     </nav>
+
 <div class="accueil_container">
 
-	<div class="accueil_img">
-		<img src="assets/img/logo.png" alt="Logo de l'association IDDEES">
-	</div>
+<h2>Version du formulaire quand il sera dynamique</h2>
 
-	<div class="accueil_titre">
-		<h1>Bienvenue sur le site de l'association IDDEES</h1>
-	</div>
-	
-	<div class="accueil_description">
-		<p>Description succinct de l'association : <br> 
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sint delectus optio nisi ratione voluptatum debitis, possimus alias dolorum cumque facere et necessitatibus! Corrupti, id nostrum cupiditate libero dolorem expedita.
-		Sit, exercitationem accusamus? Dolores, atque qui pariatur eaque accusantium aliquam vero similique non amet dolorum ratione esse ab, in rem, dolore porro iusto libero magni unde enim officia quo dolorem?
-		Cumque consequuntur incidunt voluptates! Non sed, atque nostrum, aperiam cumque expedita modi veritatis iure sapiente, harum incidunt odit nulla ea eos? Laudantium perferendis obcaecati labore quos dicta possimus, incidunt sit.
-		</p>
-	</div>
+<form class="nous_contacter_form"action="">
+    <input type="text" placeholder="Votre nom">
+    <input type="text" placeholder="Votre prénom">
+    <input type="email" name="" id="" placeholder="Votre courriel">
+    <div class="nous_contacter_checkbox">
 
+        <label for="">Objet du message :</label>
+        <select name="" id="">
+            <option value="">Demande d'information</option>
+            <option value="">Demande d'adhésion</option>
+            <option value="">Demande de collecte</option>
+        </select>
+    </div>
+    <textarea class="nous_contacter_textarea" name="" id="" cols="30" rows="10" placeholder="Votre message ici"></textarea>
+    <div class="nous_contacter_checkbox">
+        <label for="">Je suis d'accord avec les CGU</label>
+        <input type="checkbox">
+    </div>
+    <button type="submit">Envoyer</button>
+
+</form>
+
+<h2>Version pour le site statique</h2>
+
+<div class="contact_static">
+    <h2>Pour nous contacter :</h2>
+    <p>Pour toutes demande de collecte, veuillez envoyer un message à l'adresse suivante : collecte@email.com</p>
+    <p>Pour une demande d'adhésion, veuillez envoyer un message à l'adresse suivante : adhésion@email.com</p>
+    <p>Pour tous les autres demandes : contact@email.com</p>
+</div>
 
 </div>
 

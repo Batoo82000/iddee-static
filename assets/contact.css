@@ -1,0 +1,27 @@
+.nous_contacter_form{
+    display: flex;
+    flex-direction: column;
+    background-color: #A0C49D;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #A0C49D;
+}
+.nous_contacter_form > input,  .nous_contacter_form > textarea{
+    width: 80%;
+    border-radius: 5px;
+    margin: 20px;
+}
+.nous_contacter_form > textarea{
+    /* width: 80%; */
+    resize: none;
+}
+.nous_contacter_form > input{
+    height: 30px;
+}
+button{
+    padding:10px 20px;
+    margin-bottom: 20px;
+    color: #A0C49D;
+}
